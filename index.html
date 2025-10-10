@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vignesh C | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #00ffff;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #bbb;
+      margin-top: 10px;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: 50px auto;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .about h2 {
+      color: #00ffff;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: #ddd;
+      font-size: 1rem;
+    }
+
+    .skills {
+      background: #111;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .skills h2 {
+      color: #00ffff;
+      margin-bottom: 20px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skills-list span {
+      background: #222;
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: #00ffff;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+
+    .skills-list span:hover {
+      background: #00ffff;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .works {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .works h2 {
+      color: #00ffff;
+      margin-bottom: 20px;
+    }
+
+    .work-card {
+      background: #111;
+      padding: 25px;
+      border-radius: 10px;
+      margin: 15px auto;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+
+    .work-card h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .work-card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: #00ffff;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vignesh C</h1>
+    <p>UI/UX Designer | Front-End Developer | Problem Solver</p>
+    <a class="btn" href="https://drive.google.com/file/d/1rWNZlCDKhEHnZbBTlavlp0DXCyv-rb5K/view?usp=sharing" download>⬇️ Download Resume</a>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a qualified and professional UI/UX designer with a strong understanding of business principles
+      and a knack for solving complex challenges. I create user-friendly and engaging digital experiences,
+      using my technical skills and creative problem-solving to drive company growth.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills & Tools</h2>
+    <div class="skills-list">
+      <span>UI/UX Design</span>
+      <span>Core Java</span>
+      <span>HTML & CSS</span>
+      <span>Figma</span>
+      <span>Adobe XD</span>
+      <span>Photoshop</span>
+      <span>VS Code</span>
+    </div>
+  </section>
+
+  <section class="works">
+    <h2>Projects</h2>
+
+    <div class="work-card">
+      <h3>Find My Plant</h3>
+      <p>Identify plants, detect diseases, get care tips, and save favorite articles—all in one mobile app.</p>
+    </div>
+
+    <div class="work-card">
+      <h3>Plotify Land App</h3>
+      <p>Led the UI/UX design for a land-promoting app, focusing on an intuitive, map-centric interface for buyers and sellers.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>📧 <a href="mailto:vigneshchinnasamy123@gmail.com">vigneshchinnasamy123@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/vignesh-c-748532375" target="_blank">LinkedIn</a></p>
+    <p>© 2025 Vignesh C. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll animation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
